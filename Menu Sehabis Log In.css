@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    object-fit: cover;
+}
+.gaptext{
+    padding : 0;
+    margin : 0;
+    line-height : 20px;
+}
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+.dot{
+    float: right;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    
+    /* clear: right; */
+    /* margin-top: 5px; */
+    /* margin-left: 9px; */
+}
