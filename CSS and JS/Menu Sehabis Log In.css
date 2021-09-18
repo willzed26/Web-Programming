@@ -11,7 +11,7 @@ img {
     position: fixed;
     margin-top: 50px;
     width: 80px;
-    height: 370px;
+    height: 270px;
     background-color: rgb(135, 31, 231);
     border-radius: 0px 5px 15px 0px;
 }
@@ -45,7 +45,7 @@ img {
     border: 1px;
     width: 45px;
     height: 50px;
-    margin-top: 60px;
+    margin-top: 10px;
 }
 .gaptext{
     padding : 0;
@@ -66,4 +66,33 @@ img {
     height: 50px;
     width: 50px;
     border-radius: 50%;
+    border: 0;
 }
+.form-popup {
+    display: none;
+    position: fixed;
+    left: 90px;
+    top: 54px;
+    border: 3px solid #f1f1f1;
+  }
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+
+
+.modal-backdrop {
+    z-index: -1;
+  }
+.but {
+    margin-top: 12%;
+    left: 12px;
+    border: 0;
+    position:absolute;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    opacity: 0;
+  }  
