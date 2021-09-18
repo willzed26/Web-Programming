@@ -45,7 +45,6 @@ body {
 }
 
 h1 {
-    font-size: 15mm;
     color: white;
     font-weight: bolder;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -128,9 +127,14 @@ h1 {
     transition: 0.5s;
 }
 
-@media(min-width: 300px){
+/*@media(max-width: 600px){
+    .form-box h1 {
+        font-weight: bolder;
+        font-size: 15mm;
+    }
+
     .form-box {
-        margin: 50% 0% 50% 2.5%;
+        margin: 50% 0% 50% 2%;
         width: 95%;
     }
 
@@ -140,29 +144,19 @@ h1 {
     }
 }
 
-@media(min-width: 700px){
+@media(min-width: 750px){
+    .form-box h1 {
+        font-weight: bolder;
+        font-size: 15mm;
+    }
+
     .form-box {
-        margin: 50% 0% 50% 1%;
-        width: auto;
+        margin: 50% 0% 50% 2%;
+        width: 95%;
     }
 
     .icon {
         font-size: 200%;
         margin-left: 43%;
     }
-}
-
-@media(min-width: 1500px) {
-    .form-box {
-        width: 40%;
-        padding: 5% 0;
-        margin: 2% auto;
-    }
-
-    .icon {
-        font-size: 270%;
-        margin-top: -8%;
-        margin-bottom: 7%;
-        margin-left: 38%;
-    }
-}
+}*/
