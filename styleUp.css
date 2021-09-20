@@ -73,6 +73,32 @@ h1 {
     color: rgb(173, 166, 166);
 }
 
+.opt {
+    color: white; 
+    text-align: center; 
+    margin-top: -5%; 
+    margin-bottom: 5%; 
+    font-weight: bold;
+}
+
+.login {
+    text-align: center;
+}
+
+.login p {
+    color: white;
+}
+
+.login a {
+    color: #01FDCAff;
+    text-decoration: none;
+}
+
+.login a:hover{
+    color: #01FDCAff;
+    text-decoration: underline;
+}
+
 .fas {
     margin-right: 10%;
     color: white;
@@ -81,7 +107,7 @@ h1 {
 .icon {
     color: white;
     font-size: 270%;
-    margin-top: -8%;
+    margin-top: -10%;
     margin-bottom: 7%;
     margin-left: 38%;
     cursor: pointer;
@@ -127,36 +153,92 @@ h1 {
     transition: 0.5s;
 }
 
-/*@media(max-width: 600px){
-    .form-box h1 {
-        font-weight: bolder;
-        font-size: 15mm;
-    }
-
+@media(min-width: 200px){
     .form-box {
-        margin: 50% 0% 50% 2%;
-        width: 95%;
+        margin: 50% 0% 50% 1%;
+        width:98%;
     }
 
     .icon {
-        font-size: 200%;
+        font-size: 150%;
         margin-left: 35%;
+    }
+
+    .opt {
+        margin-top: 15%;
+        margin-bottom: -15%;
+        margin-left: 5%;
+    }
+
+    .login {
+        font-size: 15px;
     }
 }
 
-@media(min-width: 750px){
-    .form-box h1 {
-        font-weight: bolder;
-        font-size: 15mm;
-    }
-
+@media(min-width: 300px){
     .form-box {
-        margin: 50% 0% 50% 2%;
+        margin: 50% 0% 50% 2.5%;
         width: 95%;
     }
 
     .icon {
-        font-size: 200%;
-        margin-left: 43%;
+        margin-left: 37%;
+        font-size: 180%;
     }
-}*/
+
+    .opt {
+        margin-left: 3%;
+        margin-top: 15%;
+        margin-bottom: -10%;
+    }
+}
+
+@media(min-width: 700px){
+    .form-box {
+        margin: 50% 1% 50% 1%;
+        width: auto;
+    }
+
+    .icon {
+        font-size: 280%;
+        margin-left: 41%;
+    }
+
+    .opt {
+        font-size: 25px;
+        margin-top: -10%;
+        margin-bottom: 5%;
+        margin-left: 5.5%;
+        margin-right: 4%;
+    }
+
+    .login  {
+        margin-left: 2.5%;
+    }
+}
+
+@media(min-width: 1500px) {
+    .form-box {
+        width: 40%;
+        padding: 5% 0;
+        margin: 2% auto;
+    }
+
+    .icon {
+        font-size: 270%;
+        margin-top: -12%;
+        margin-bottom: 7%;
+        margin-left: 38%;
+    }
+
+    .opt {
+        font-size: 20px;
+        margin-left: 5.5%;
+        margin-top: -5%;
+    }
+
+    .login  {
+        margin-left: 2.5%;
+    }
+    
+}
