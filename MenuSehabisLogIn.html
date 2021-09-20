@@ -31,10 +31,12 @@ background-image: linear-gradient(315deg, #131313 0%, #414141 74%);">
               <h1 style="color: #000000;">John Doe</h1>
               <p class="title">Student From Indonesia,</p>
               <p>Universitas Tarumanagara</p>
-              <!-- <a href="#"><i class="fa fa-dribbble"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-linkedin"></i></a>
-              <a href="#"><i class="fa fa-facebook"></i></a> -->
+              <div>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </div>
+              
               
               <div>
                 <button type="button" class="edit btn btn-success pull-left" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>
@@ -54,13 +56,13 @@ background-image: linear-gradient(315deg, #131313 0%, #414141 74%);">
                 <div class="modal-body EP">
                     <form action="/action_page.php">
                       <label for="name" style="color: #000000;"><strong>Name :</strong></label>
-                      <input type="text" id="fname" name="firstname" placeholder="Your Name (minimum 5 character)">
+                      <input type="text" id="name" name="name" placeholder="Your Name (minimum 5 character)">
                         <br>
                       <label for="Password " style="color: #000000;"><strong>Password :</strong></label>
-                      <input type="text" id="lname" name="lastname" placeholder="Your Password (minimum 6 character)">
+                      <input type="text" id="Password" name="Password" placeholder="Your Password (minimum 6 character)">
                         <br>
-                      <label for="Password " style="color: #000000;"><strong>Institute :</strong></label>
-                      <input type="text" id="lname" name="lastname" placeholder="Your Institute">
+                      <label for="Institute " style="color: #000000;"><strong>Institute :</strong></label>
+                      <input type="text" id="Institute" name="Institute" placeholder="Your Institute">
                         <br>
                       <label for="country" style="color: #000000;"><strong>Country :</strong></label>
                       <select id="country" name="country">
@@ -311,6 +313,15 @@ background-image: linear-gradient(315deg, #131313 0%, #414141 74%);">
                         <option value="Zambia">Zambia</option>
                         <option value="Zimbabwe">Zimbabwe</option>
                      </select>
+                     <div>
+                       <h4>Social Media</h2>
+                      <label for="Twitter" style="color: #000000;"><strong>Twitter :</strong></label>
+                      <input type="text" id="Twitter" name="Twitter" placeholder="Your Twitter ex: https://twitter.com/JohnDoe">
+                      <label for="Instagram" style="color: #000000;"><strong>Instagram :</strong></label>
+                      <input type="text" id="Instagram" name="Instagram" placeholder="Your Instagram ex: https://www.instagram.com/JohnDoe">
+                      <label for="Facebook" style="color: #000000;"><strong>Facebook :</strong></label>
+                      <input type="text" id="Facebook" name="Facebook" placeholder="Your Facebook url">
+                     </div>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -327,18 +338,16 @@ background-image: linear-gradient(315deg, #131313 0%, #414141 74%);">
             <i data-feather="users" class="classes"></i>
             <!-- <img class="classes" src="Assets\Classes.png" alt=""> -->
           </a>
-          <p class="mt-1" style="padding-left: 18px;">Class</p>
+          <p class="mt-1" style="padding-left: 18px; color: #000000;">Class</p>
         
           <a href="AddClass.html">
             <i data-feather="user-plus" class="add"></i>
            <!-- <img class="add" src="Assets\Adding.png" alt=""> -->
           </a>
-          <p class="gaptext" style="padding-left: 8px; font-size: 13px;">Add Class</p>
+          <p class="gaptext" style="padding-left: 8px; font-size: 13px; color: #000000;">Add Class </p>
         </div>
-      
       </ul>
     </div>
-
   </nav>
 
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
