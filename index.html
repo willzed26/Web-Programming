@@ -34,7 +34,7 @@
             <a href="index.html"><img src="picIndex/Logo.png"></a>
             <div class="nav-links" id="navLinks" >
                 <i class="far fa-window-close" onclick="hideMenu()"></i>
-                <ul>
+                <ul style="top: 5%; right: 5%;position: absolute;">
                     <li><a><button class="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign Up</button></li></a>
                     <li><a><button class="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">Sign In</button></li></a>
                     <li><a href="">About</a></li>
@@ -154,7 +154,7 @@
             
                     <button type="button" class="submit">Sign Up</button>
                     <div class="login">
-                        <p>Already Have an Account ? <a href="signIn.html">Sign In</a></p>
+                        <p>Already Have an Account ? <a data-bs-toggle="modal" data-bs-target="#exampleModal2" style="cursor: pointer;text-decoration: underline;">Sign In</a></p>
                     </div>
                 </div>
           </div>
@@ -198,7 +198,7 @@
             
                     <button type="button" class="submit">Sign Up</button>
                     <div class="new">
-                        <a href="signUp.html">Create New Accout Here</a>
+                        <a data-bs-toggle="modal" data-bs-target="#exampleModal" style="cursor: pointer; text-decoration: underline; color: aliceblue;"><strong>Create New Account Here</strong> </a>
                     </div>
                 </div>
           </div>
