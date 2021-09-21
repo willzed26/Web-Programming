@@ -541,6 +541,7 @@ h1 {
 .new a {
     color: white;
     padding-top: 5%;
+    text-decoration: none;
 }
 
 .new a:hover {
