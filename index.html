@@ -36,7 +36,7 @@
                 <i class="far fa-window-close" onclick="hideMenu()"></i>
                 <ul style="top: 5%; right: 5%;position: absolute;">
                     <li><a><button class="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign Up</button></li></a>
-                    <li><a><button class="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">Sign In</button></li></a>
+                    <li><a><button class="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">Log In</button></li></a>
                     <li><a href="">About</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
@@ -120,8 +120,7 @@
         <div class="modal-dialog">
           <div class="modal-content" style="background: none; height: 0px;">
                 <div class="form-box">
-                    <h1>Sign Up</h1>
-            
+                    <h1>Sign Up</h1>            
                     <div class="input">
                         <i class="fas fa-id-card"></i>
                         <input class="inp" type="text" placeholder="Enter Your Username" required>
@@ -151,21 +150,58 @@
                         <a href=""><i class="fab fa-google"></i></a>
                         <a href=""><i class="fab fa-facebook-square"></i></a>
                     </div>
-            
-                    <button type="button" class="submit">Sign Up</button>
+                    <a><button class="submit" data-bs-toggle="modal" data-bs-target="#exampleModal3">Sign Up</button></a>
+                    
                     <div class="login">
-                        <p>Already Have an Account ? <a data-bs-toggle="modal" data-bs-target="#exampleModal2" style="cursor: pointer;text-decoration: underline;">Sign In</a></p>
+                        <p>Already Have an Account ? <a data-bs-toggle="modal" data-bs-target="#exampleModal2" style="cursor: pointer;text-decoration: underline;">Log In</a></p>
                     </div>
                 </div>
           </div>
         </div>
       </div>
 
+        <!-- verification email -->
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" style="width:400px">
+              <div class="modal-content" style="background-color: rgb(26, 26, 26) ">
+                <div class="modal-header justify-content-center">
+                  <h5 class="modal-title" style="color: aliceblue;">Email Verification</h5>
+                </div>
+                <div class="modal-body ">
+                  <div style="background-color: rgb(49, 49, 49)" class="d-flex justify-content-center">
+              <lottie-player
+                src="https://assets1.lottiefiles.com/packages/lf20_OjG2Td.json"
+                background="transparent"
+                speed="1"
+                style="width: 300px; height: 300px"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+            <div>
+              <h4 style="color: aliceblue">Hello John Doe,</h4>
+              <p class="card-text" style="color: rgb(255, 250, 250);font-weight: 150;">
+                Thank you for registering an account in
+                <span style="font-weight: bold">NetS</span>. Before you get started,
+                we need you to verify your email first.
+              </p>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-success">
+                        Verify Email
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
       <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content" style="background: none; height: 0px;">
                 <div class="form-box">
-                    <h1>Sign In</h1>
+                    <h1>Log In</h1>
             
                     <div class="input">
                         <i class="fas fa-id-card"></i>
@@ -187,7 +223,7 @@
                     </div>
             
                     <div class="opt">
-                        <p> Or Sign In With</p><br><br>
+                        <p> Or Log In With</p><br><br>
                     </div>
             
                     <div class="icon">
@@ -196,7 +232,7 @@
                         <a href=""><i class="fab fa-facebook-square"></i></a>
                     </div>
             
-                    <button type="button" class="submit">Sign Up</button>
+                    <button type="button" class="submit">Log In</button>
                     <div class="new">
                         <a data-bs-toggle="modal" data-bs-target="#exampleModal" style="cursor: pointer; text-decoration: underline; color: aliceblue;"><strong>Create New Account Here</strong> </a>
                     </div>
