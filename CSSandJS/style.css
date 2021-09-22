@@ -1,17 +1,313 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
 }
-body {
-    background: linear-gradient(0deg,black,#262626);
-    background-position: cover;
+
+.header{
+    min-height: 100vh;
+    width: 90%;
+    /* background: linear-gradient(0deg,black,#262626); */
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/Assets/head.jpg);
+    background-position: center;
     background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    height: 80;
+}
+
+nav{
+    display: flex;
+    padding: 0% 1%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background:gray;
+    display:block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    color: white;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 15mm;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+}
+
+.text-box a{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.text-box a::after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background: whitesmoke;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.text-box a:hover::after{
+    width: 100%;
+}
+
+.hero-btn{
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    color: white;
+    border: 1px solid  white;
+    background: black;
+    transition: 1s;
+    text-decoration: none;
+}
+
+nav .far{
+    display: none;
+}
+
+nav .fas{
+    position: relative;
+    text-align: right;
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-weight: bolder;
+        font-style: italic;
+        font-size: 15mm;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        background: black;
+        height: 100vh;
+        width: 200px;
+        top:0;
+        right:-200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;  
+    }
+    nav .far{
+        display: block;
+        color:white;
+        margin: 10px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    nav .fas{
+        position: relative;
+        display: block;
+        color:white;
+        margin: -60px 3px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+.fitur{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1{
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.fitur-col{
+    flex-basis: 31%;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.fitur p{
+    font-size: 17px;
+    font-style: italic;
+    color: white;
+    font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.fitur-col p{
+    font-size: 15px;
+    color: white;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.fitur-col img{
+    width: 100%;
+    display: block;
+    max-height: 50%;
+}
+
+p{
+    color: white;
+    font-weight: bold;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fitur-col h3{
+    color: aqua;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fitur-col:hover{
+    box-shadow: 0 0 20px 0px gray;
+}
+
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+.cont{
+    margin: 100px auto;
+    width: 75%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/Assets/faq.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cont h1{
+    color: whitesmoke;
+    margin-bottom: 40px;
+    padding: 0;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cont a{
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+}
+
+@media(max-width: 700px){
+    .cont h1{
+        font-size: 24px;
+    }
+}
+
+.footer{
+    width:100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.icons .fab{
+    color: white;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
 .form-box {
-    width: 40%;
+    width: 95%;
     padding: 5% 0;
     margin: 2% auto;
     position: relative;
@@ -72,12 +368,13 @@ h1 {
     color: rgb(173, 166, 166);
 }
 
-.opt {
+.opt p{
     color: white; 
     text-align: center; 
     margin-top: -5%; 
-    margin-bottom: 5%; 
+    margin-bottom: -20px;
     font-weight: bold;
+    font-size: 25px;
 }
 
 .login {
@@ -106,15 +403,13 @@ h1 {
 .icon a{
     color: white;
     font-size: 50px;
-    margin-top: -10%;
     margin-bottom: 7%;
-    margin-left: 38%;
+    margin-left: 35%;
     cursor: pointer;
 }
 
 .fab {
-    margin-right: 30%;
-    margin-left: -15%;
+    margin-left: -18%;
 }
 
 .cekPass {
@@ -152,7 +447,7 @@ h1 {
     transition: 0.5s;
 }
 
-@media(min-width: 200px){
+/* @media(min-width: 200px){
     .form-box {
         margin: 50% 0% 50% 1%;
         width:98%;
@@ -216,34 +511,61 @@ h1 {
     }
 }
 
-/* @media(min-width: 1500px) {
+@media(min-width: 1500px) {
     .form-box {
-        width: 40%;
+        width: 100%;
         padding: 5% 0;
         margin: 2% auto;
     }
-
     .icon {
         font-size: 270%;
         margin-top: -12%;
         margin-bottom: 7%;
         margin-left: 38%;
     }
-
     .opt {
         font-size: 20px;
         margin-left: 5.5%;
         margin-top: -5%;
     }
-
     .login  {
         margin-left: 2.5%;
     }
     
 } */
-* {
-    box-sizing: border-box;
+
+.new {
+    text-align: center;
 }
+
+.new a {
+    color: white;
+    padding-top: 5%;
+    text-decoration: none;
+}
+
+.new a:hover {
+    color: #01FDCAff;
+    text-decoration: none;
+}
+
+.fPass {
+    margin-top: -10%;
+    margin-bottom: 15%;
+    margin-left: 10%;
+}
+
+.fPass a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.fPass a:hover {
+    color: #01FDCAff;
+    text-decoration: none;
+}
+
 img {
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
@@ -305,6 +627,12 @@ img {
     width: 200px; 
     height: 200px;
 }
+.button{
+    color: white;
+    font-weight: bolder;
+    border: none;
+    background: none;
+}
 .dot{
     height: 50px;
     width: 50px;
@@ -326,7 +654,7 @@ img {
 .modal-backdrop {
     z-index: -1;
 }
-.but {
+/* .but {
     margin-top: 12%;
     left: 12px;
     border: 0;
@@ -336,7 +664,7 @@ img {
     width: 50px;
     cursor: pointer;
     opacity: 0;
-}  
+}   */
 
   /* card */
 .card {
@@ -360,7 +688,7 @@ a {
     color: black;
 }
 /* Edit Profil */
-input[type=text], select {
+/* input[type=text], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -368,7 +696,7 @@ input[type=text], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-  }
+  } */
 
 .EP {
     border-radius: 5px;
@@ -401,4 +729,3 @@ input[type=text], select {
   .close:after {
     transform: rotate(-45deg);
   }
-  
