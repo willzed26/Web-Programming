@@ -600,12 +600,12 @@ h1 {
   text-decoration: none;
 }
 
-img {
+/* img {
   image-rendering: pixelated;
   image-rendering: -moz-crisp-edges;
   image-rendering: crisp-edges;
   object-fit: cover;
-}
+} */
 .nav {
   position: fixed;
   margin-top: 50px;
@@ -765,20 +765,9 @@ a {
   transform: rotate(-45deg);
 }
 
-.forcon {
-  width: 400px;
-  height: 150px;
-  margin-left: 15%;
-  margin-top: 8px;
-}
-.forot {
-  width: 400px;
-  margin-left: 15%;
-  margin-top: 8px;
-}
 .bgc {
   background-image: url("/Assets/contact.jpg");
-  height: 10%;
+  /* height: 10%; */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
