@@ -52,72 +52,215 @@
             >Create Class</a
           >
         </li>
-        <li><a class="dropdown-item drp" type="button"
-          class="edit btn btn-success pull-left"
-          data-bs-toggle="modal"
-          data-bs-target="#Join"">Join Class</a></li>
+        <li>
+          <a
+            class="dropdown-item drp"
+            type="button"
+            class="edit btn btn-success pull-left"
+            data-bs-toggle="modal"
+            data-bs-target="#Join"
+            >Join Class</a
+          >
+        </li>
       </ul>
     </div>
     <!-- create class -->
-    <div class="modal fade" id="CreateC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="CreateC"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content bg-dark">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel" style="color:aliceblue;">Create Class</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5
+              class="modal-title"
+              id="exampleModalLabel"
+              style="color: aliceblue"
+            >
+              Create Class
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
           <div class="modal-body">
-            <label for="CreateClass" style="color: aliceblue;"><strong>Class Name :</strong></label>
-            <input type="text" name="CreateClass" id="CreateClass" placeholder="Enter your class name" style="background-color: #181818; color: white;">
-            <br>
-            <label for="Description" style="color: aliceblue;"><strong>Description :</strong></label>
-            <input type="text" name="Description" id="Description" placeholder="Let people know what this class about" style="background-color: #181818; color: white;">
-            <br>
-            <label for="Privacy" style="color:aliceblue"
-                    ><strong>Privacy :</strong></label
-                  >
-                  <select id="Privacy" name="Privacy" style="background-color: #181818; color: white;">
-                    <option value="Private">Private - Only class owner can add members</option>
-                    <option value="Public">Public - Anyone can join your class</option>
-                  </select>
+            <label for="CreateClass" style="color: aliceblue"
+              ><strong>Class Name :</strong></label
+            >
+            <input
+              type="text"
+              name="CreateClass"
+              id="CreateClass"
+              placeholder="Enter your class name"
+              style="background-color: #181818; color: white"
+            />
+            <br />
+            <label for="Description" style="color: aliceblue"
+              ><strong>Description :</strong></label
+            >
+            <input
+              type="text"
+              name="Description"
+              id="Description"
+              placeholder="Let people know what this class about"
+              style="background-color: #181818; color: white"
+            />
+            <br />
+            <label for="Privacy" style="color: aliceblue"
+              ><strong>Privacy :</strong></label
+            >
+            <select
+              id="Privacy"
+              name="Privacy"
+              style="background-color: #181818; color: white"
+            >
+              <option value="Private">
+                Private - Only class owner can add members
+              </option>
+              <option value="Public">
+                Public - Anyone can join your class
+              </option>
+            </select>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Create</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#SuccessCreateClass"
+            >
+              Create
+            </button>
           </div>
         </div>
       </div>
     </div>
     <!-- join class -->
-    <div class="modal fade" id="Join" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="Join"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content bg-dark">
           <div class="modal-body">
-            <h3 style="text-align: center; color: aliceblue;">Enter Your Class Code</h3>
+            <h3 style="text-align: center; color: aliceblue">
+              Enter Your Class Code
+            </h3>
             <div class="d-flex justify-content-center">
-              <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_jvj9d2lc.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+              <lottie-player
+                src="https://assets3.lottiefiles.com/packages/lf20_jvj9d2lc.json"
+                background="transparent"
+                speed="1"
+                style="width: 300px; height: 300px"
+                loop
+                autoplay
+              ></lottie-player>
             </div>
             <div class="d-flex justify-content-center">
-              <input type="text" placeholder="Enter Code" style="background-color: #181818; color: white; width: 200px;">
+              <input
+                type="text"
+                placeholder="Enter Code"
+                style="background-color: #181818; color: white; width: 200px"
+              />
             </div>
           </div>
-            <div>
-              <button type="button" class="btn btn-primary pull-right mx-2 my-2">Enter</button>
-              <button type="button" class="btn btn-secondary pull-right my-2" data-bs-dismiss="modal">Close</button>
-            </div>
+          <div>
+            <button
+              type="button"
+              class="btn btn-primary pull-right mx-2 my-2"
+              data-bs-toggle="modal"
+              data-bs-target="#SuccessAddClass"
+            >
+              Enter
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary pull-right my-2"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </div>
 
+    <!-- modal success create class  -->
+    <div class="modal fade" id="SuccessCreateClass" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" style="width:400px">
+        <div class="modal-content" style="background-color: rgb(26, 26, 26) ">
+          <div class="modal-body ">
+            <div class="d-flex justify-content-center">
+              <lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_c6p2mlht.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+      </div>
+      <div>
+        <p class="card-text" style="color: rgb(255, 250, 250);font-weight: 150; text-align: center;">
+          Successfully Create Class!!
+        </p>
+              <div>
+                  <a href="Tampilan daftar dan kode kelas.html" class="d-flex justify-content-center btn btn-success">
+                  Close
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- succes add class  -->
+    <div class="modal fade" id="SuccessAddClass" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" style="width:400px">
+        <div class="modal-content" style="background-color: rgb(26, 26, 26) ">
+          <div class="modal-body ">
+            <div class="d-flex justify-content-center">
+              <lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_iMTtq1.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+      </div>
+      <div>
+        <p class="card-text" style="color: rgb(255, 250, 250);font-weight: 150; text-align: center;">
+          Successfully Add Class!!
+        </p>
+              <div>
+                  <a href="Tampilan daftar dan kode kelas.html" class="d-flex justify-content-center btn btn-success">
+                  Close
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- profile -->
     <div>
-      <!-- profile -->
       <div class="profil">
         <img class="dot" src="Assets\Sample Profile.webp" alt="" />
 
         <button class="but" onclick="openForm()"></button>
 
-        <div class="form-popup" style="border: #2b2b2b;" id="myForm">
-          <div class="card" style="background-color: #2b2b2b;outline-color: #2b2b2b;">
+        <div class="form-popup" style="border: #2b2b2b" id="myForm">
+          <div
+            class="card"
+            style="background-color: #2b2b2b; outline-color: #2b2b2b"
+          >
             <img
               src="Assets\Sample Profile.webp"
               alt="John"
@@ -125,8 +268,10 @@
             />
             <a href="#" class="close" onclick="closeForm()"></a>
             <h1 style="color: #000000">John Doe</h1>
-            <p class="title" style="color: aliceblue;">Student From Indonesia,</p>
-            <p style="color: aliceblue;">Universitas Tarumanagara</p>
+            <p class="title" style="color: aliceblue">
+              Student From Indonesia,
+            </p>
+            <p style="color: aliceblue">Universitas Tarumanagara</p>
             <div class="icon">
               <a href="#"><i class="fab fa-github"></i></a>
               <a href="#"><i class="fab fa-instagram"></i></a>
@@ -141,9 +286,13 @@
               >
                 Edit
               </button>
-              <a href="index.html" class="edit btn btn-danger pull-right" style="line-height: 20px;">
+              <a
+                href="index.html"
+                class="edit btn btn-danger pull-right"
+                style="line-height: 20px"
+              >
                 Log out
-            </a>
+              </a>
             </div>
           </div>
         </div>
@@ -566,7 +715,7 @@
           </div>
         </div>
       </div>
-      <h1 style="text-align: center;">My Classes</h1>
+      <h1 style="text-align: center">My Classes</h1>
 
       <div style="margin-right: auto; margin-left: auto">
         <div class="container">
@@ -582,10 +731,10 @@
                     class="card-img-top"
                     alt="card image cap"
                   />
-                <div class="card-body text-center">
-                  <h5 class="card-title">Web Programming</h5>
-                  <p class="card-text">Kelas A</p>
-                </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Web Programming</h5>
+                    <p class="card-text">Kelas A</p>
+                  </div>
                 </a>
               </div>
             </div>
@@ -593,14 +742,14 @@
               <div class="cardshadow" style="width: 20rem">
                 <a href="TampilanDalamKelas.html">
                   <img
-                  src="Assets\lake-at-the-cottage-1372381.webp"
-                  class="card-img-top"
-                  alt="card image cap"
-                />
-                <div class="card-body text-center">
-                  <h5 class="card-title">Database System</h5>
-                  <p class="card-text">Kelas A</p>
-                </div>
+                    src="Assets\lake-at-the-cottage-1372381.webp"
+                    class="card-img-top"
+                    alt="card image cap"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Database System</h5>
+                    <p class="card-text">Kelas A</p>
+                  </div>
                 </a>
               </div>
             </div>
@@ -612,10 +761,10 @@
                     class="card-img-top"
                     alt="card image cap"
                   />
-                <div class="card-body text-center">
-                  <h5 class="card-title">Operating System</h5>
-                  <p class="card-text">Kelas A</p>
-                </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Operating System</h5>
+                    <p class="card-text">Kelas A</p>
+                  </div>
                 </a>
               </div>
             </div>
@@ -623,7 +772,7 @@
         </div>
       </div>
     </div>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
